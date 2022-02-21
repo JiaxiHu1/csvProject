@@ -60,6 +60,15 @@ plt.plot(dates, highs, c="red")
 #ADD ANOTHER LINE FOR LOWS 
 plt.plot(dates, lows, c="blue")
 
+
+#STEP 4 - FILL THE COLOR IN BETWEEN 
+#we need x-axis location and two y-axis location 
+#alpha - to make it light 0 - 1 very heavy 
+plt.fill_between(dates, highs, lows, facecolor = 'blue', alpha = 0.1)
+
+
+
+
 #the title is on the top 
 #STEP 2 change the title 
 plt.title("Daily low and high temperatures - 2018", fontsize=16)
@@ -71,5 +80,22 @@ plt.tick_params(axis="both",which="major",labelsize=16)
 
 #for the x-axis 
 fig.autofmt_xdate()
+
+plt.show()
+
+
+#subplot - 2 rows and 1 column 
+#WE HAVE TO CLOSE THE FIRST GRAPH TO LET THE SECOND GRAPH SHOW UP 
+plt.subplot(2,1,1)
+plt.plot(dates,highs,c='red')
+plt.title("Highs")
+
+plt.subplot(2,1,2)
+plt.plot(dates,lows,c='blue')
+plt.title("Lows")
+
+#which index we are working with 
+
+plt.suptitle("Highs and Lows of Sitka, Alaskas 2018")
 
 plt.show()
