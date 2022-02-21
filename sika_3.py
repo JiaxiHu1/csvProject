@@ -81,6 +81,9 @@ plt.tick_params(axis="both",which="major",labelsize=16)
 #for the x-axis 
 fig.autofmt_xdate()
 
+
+#TO COMMENT OUT THE FIRST GRAPH SHOW - THEN THE FIRST GRAPH WILL NOT SHOW UP 
+
 plt.show()
 
 
