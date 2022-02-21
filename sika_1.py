@@ -24,3 +24,10 @@ print(highs)
 import matplotlib.pyplot as plt 
 
 plt.plot(highs, c="red")
+
+plt.title("Daily high temperatures, July 2018", fontsize=16)
+plt.xlabel("")
+plt.ylabel("Temperatures (F)", fontsize=16)
+plt.tick_params(axis="both",which="major",labelsize=16)
+
+plt.show()
