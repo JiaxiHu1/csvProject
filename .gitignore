@@ -1,2 +1,4 @@
 .vscode/
-csv_project/
+#csv_project/
+#change it to 
+.venv/ 
