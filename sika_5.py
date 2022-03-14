@@ -22,7 +22,7 @@ for index, column_header in enumerate(header_row1):
 highs = []
 dates = []
 lows = []
-name1 =[]
+namea =[]
 
 fig = plt.figure()
 
@@ -38,10 +38,10 @@ for row in csv_file:
         highs.append(int(row[4]))
         lows.append(int(row[5]))
         dates.append(the_date)
-        name1.append(row[1])
+        namea.append(row[1])
 
 plt.subplot(2, 1, 2)
-plt.title(name1[1])
+plt.title(namea[1])
 plt.xlabel("", fontsize=12)
 plt.ylabel("", fontsize=12)
 plt.tick_params(axis="both", which="major", labelsize=12)
@@ -54,7 +54,7 @@ fig.autofmt_xdate()
 highs = []
 dates = []
 lows = []
-name2 = []
+nameb = []
 
 for row in csv_file1:
     try:
@@ -69,10 +69,10 @@ for row in csv_file1:
         lows.append(int(row[6]))
         the_date = datetime.strptime(row[2], '%Y-%m-%d')
         dates.append(the_date)
-        name2.append(row[1])
+        nameb.append(row[1])
 
 plt.subplot(2, 1, 1)
-plt.title(name2[1])
+plt.title(nameb[1])
 plt.xlabel("", fontsize=12)
 plt.ylabel("", fontsize=12)
 plt.tick_params(axis="both", which="major", labelsize=12)
